@@ -29,7 +29,7 @@ jobs:
 
     - name: Validate and Create Build Artifact
       run: |
-        npm exec html-validate index.html  
+        npx html-validate index.html  
         npx stylelint "**/*.css"
 
         if [ $? -eq 0 ]; then
